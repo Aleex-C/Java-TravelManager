@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.model_practic.HelloController">
+   <center>
+      <TableView fx:id="hotelTableView" onMouseClicked="#onItemSelected" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="147.20001220703125" text="Hotel" />
+          <TableColumn fx:id="roomsColumn" prefWidth="128.79998779296875" text="Number of rooms" />
+            <TableColumn fx:id="priceColumn" prefWidth="152.0" text="Price per Night" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <HBox prefHeight="76.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="locationsComboBox" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

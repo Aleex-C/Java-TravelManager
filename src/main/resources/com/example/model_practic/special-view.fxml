@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.model_practic.SpecialController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker fx:id="startDatePicker" onAction="#getStart">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </DatePicker>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="6.0" layoutY="26.0" text="Start Date" />
+                  <Label layoutX="137.0" layoutY="26.0" text="End Date" />
+               </children>
+            </Pane>
+            <DatePicker fx:id="endDatePicker" onAction="#getEnd">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ListView fx:id="specialOfferListView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
